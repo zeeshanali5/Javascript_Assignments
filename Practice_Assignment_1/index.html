@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Assignment 1</title>
+</head>
+<body style="background-color: blanchedalmond;">
+    <br><br>
+    <b><p style="margin-left: 20px; font-size: medium;">Q1. Write a script to greet your website visitor using JS alert box. (Welcome to Our Website) </p> </b>
+    <button type="button" onclick="alert('Welcome to Our Website')" style="margin-left: 20px; width: max-content;">Try it</button>
+    <br><br>
+
+    <b><p style="margin-left: 20px; font-size: medium;">Q2. Write a script to display message on your web page. (Error! Please Enter a valid password) </p> </b>
+    <button type="button" onclick="alert('Error! Please enter a valid password.')" style="margin-left: 20px; width: max-content;">Try it</button>
+    <br><br>
+
+    <b><p style="margin-left: 20px; font-size: medium;">Q3. Write a script to display message on your web page: (Hint : Use line break) </p> </b>
+    <button type="button" onclick="alert('Hint : Use line break')" style="margin-left: 20px; width: max-content;">Try it</button>
+    <br><br>
+
+    <b><p style="margin-left: 20px; font-size: medium;">Q4. Write a script to display messages in sequence (3 Alerts) </p> </b>
+    <button type="button" onclick="displayMessages()" style="margin-left: 20px; width: max-content;">Try it</button>
+	<br><br>
+	<script>
+		function displayMessages() {
+			alert("this is alert 1");
+			alert("this is alert 2");
+			alert("this is alert 3");
+		}
+	</script>
+
+    <b><p style="margin-left: 20px; font-size: medium;">Q5. Make use of alerts in your new/existing HTML & CSS project. </p> </b>
+    <button type="button" onclick="alert('Please signup for access our website')" style="margin-left: 20px; width: max-content;">Try it</button>
+    <br><br>
+
+    
+    <b><p style="margin-left: 20px; font-size: medium;">Q7. Declare a variable called username. </p> </b>
+    <b style="margin-left: 30px; font-family: 'sans-serif'; color: brown; font-size: medium; "><script>
+        document.write("var username");
+    </script></b> <br><br>
+
+<b><p style="margin-left: 20px; font-size: medium;">Q8. Declare a variable called myName & assign to it a string that represents your Full Name.  </p> </b>
+<b style="margin-left: 30px; font-family: 'sans-serif'; color: brown; font-size: medium; "><script>
+    var myName = "Muhammad Azhar";
+    document.write(myName); 
+</script></b>  <span style="margin-left: 50px;"> // var myName = "Muhammad Azhar";
+    document.write(myName);   </span> <br><br>
+
+    <b><p style="margin-left: 20px; font-size: medium;">Q9. Write script to  
+        a) Declare a JS variable, titled message.  
+        b) Assign “Hello World” to variable message  
+        c) Display the message in alert box.  </p> </b>
+    <button type="button" onclick="alert(message)" style="margin-left: 20px; width: max-content;">Try it</button>
+    <script>
+        var message = "Hello World";
+    </script>
+    <br><br>
+
+    <b><p style="margin-left: 20px; font-size: medium;">Q10. Write a script to save student’s bio data in JS variables and show the data in alert boxes.  </p> </b>
+    <button type="button" onclick="alert('Firstname: ' + firstname + '\n' + 'Lastname' + ': ' + lastname + '\n' + 'Age' + ': ' + age + '\n' + 'Student ID' + ': ' + student_id + '\n' + 'Email Address' + ': ' + email)" style="margin-left: 20px; width: max-content;">Try it</button>
+    <script>
+        var firstname = "Muhammad";
+        var lastname = "Azhar";
+        var age = 30;   
+        var student_id = 9999;
+        var email = "blackcaps2010@hotmail.com";
+    </script>
+    <br><br>
+
+    <b><p style="margin-left: 20px; font-size: medium;">Q11. Declare a variable called email and assign to it a string that represents your Email Address(e.g. example@example.com). Show the blow mentioned 
+        message in an alert box.(Hint: use string concatenation) </p> </b>
+    <button type="button" onclick="alert('Email Address' + ': ' + email)" style="margin-left: 20px; width: max-content;">Try it</button>
+    <script>
+        var email = "blackcaps2010@hotmail.com";
+    </script>
+    <br><br>
+
+
+    <b><p style="margin-left: 20px; font-size: medium;">Q12. Write a script to display this in browser through JS. </p> </b>
+    <b style="margin-left: 30px; font-family: 'sans-serif'; color: brown; font-size: medium; "><script>
+        var string1="▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬";
+        document.write(string1);
+    </script></b> <br><br>
+
+    <b><p style="margin-left: 20px; font-size: medium;">Q13. Store following string in a variable and show in alert and browser through JS </p> </b>
+    <button type="button" onclick="alert(string1)" style="margin-left: 20px; width: max-content;">Try it</button>
+    <br><br>
+
+    
+    <b><p style="margin-left: 20px; font-size: medium;">Q14.  Declare a variable called age & assign to it your age. Show your age in an alert box </p> </b>
+    <button type="button" onclick="alert('Age' + ': ' + age )" style="margin-left: 20px; width: max-content;">Try it</button>
+    <br><br>
+
+    <b><p style="margin-left: 20px; font-size: medium;">Q15. Declare & initialize a variable to keep track of how many times a visitor has visited a web page. Show his/her number of visits on your web page. For 
+        example: “You have visited this site N times”. </p> </b>
+    <button type="button" onclick="alert(visits)" style="margin-left: 20px; width: max-content;">Try it</button>
+    <script>
+        var N=1;
+        N++;
+        var visits ="you visited this website "+N+ " times";
+    </script>
+    <br><br>
+
+    <b><p style="margin-left: 20px; font-size: medium;">Q16.  Declare a variable called birthYear & assign to it your birth year. Show the following message in your browser:) </p> </b>
+    <button type="button" onclick="alert('Birth Year' + ': ' + birthyear)" style="margin-left: 20px; width: max-content;">Try it</button>
+    <script>
+        var birthyear = 93;
+    </script>
+    <br><br>
+
+    <b><p style="margin-left: 20px; font-size: medium;">Q17. A visitor visits an online clothing store www.xyzClothing.com . Write a script to store in variables the following information: a. Visitor’s name b. Product 
+        title c. Quantity i.e. how many products a visitor wants to order Show the following message in your browser: “John Doe ordered 5 T-shirt(s) on XYZ Clothing store”. </p> </b>
+    <button type="button" onclick="alert(visitorName + ' ordered ' + quantity + ' ' + productTitle + '(s) on XYZ Clothing store')" style="margin-left: 20px; width: max-content;">Try it</button>
+    <script>
+        var visitorName = "John Doe";
+        var productTitle = "T-shirt";
+        var quantity = 5;
+    </script>
+    <br><br>
+
+    <b><p style="margin-left: 20px; font-size: medium;">Q18. Declare 3 variables in one statement </p> </b>
+    <b style="margin-left: 30px; font-family: 'sans-serif'; color: brown; font-size: medium; "><script>
+        var variable1 = "Admin", variable2 = 14, variable3 = true;
+        document.write(variable1 + ' ' + variable2 + ' ' + variable3);
+    </script></b> 
+    <br><br>
+
+
+    <b><p style="margin-left: 20px; font-size: medium;">Q19. Declare 5 legal & 5 illegal variable names. </p> </b>
+    <b style="margin-left: 30px; font-family: 'sans-serif'; color: brown; font-size: medium; ">
+    <script>
+        document.write("legal variables: "
+        var myVariable 
+        var $price
+        var firstName
+        var totalCount 
+     //Illegal Variable Names:
+        var First_Place 
+        var my_variable
+        var illegal_variable 
+        var my_variable1
+        var break);
+    </script></b> 
+    <br><br>
+
+
+    <b><p style="margin-left: 20px; font-size: medium;">Q20. Display this in your browser  
+        a) A heading stating “Rules for naming JS variables”  
+        b) Variable names can only contain ______, ______, ______ and ______. For 
+        example $my_1stVariable  
+        c) Variables must begin with a ______, ______ or _____. For example 
+        $name, _name or name  
+        d) Variable names are case _________  
+        e) Variable names should not be JS _________ </p> </b>
+
+    <button type="button" onclick="alert('Rules for naming JS variables\n\n' +
+    'Variable names can only contain letters, numbers, underscores, and dollar signs. For example $my_1stVariable.\n\n' +
+    'Variables must begin with a letter, underscore, or dollar sign. For example $name, _name, or name.\n\n' +
+    'Variable names are case-sensitive.\n\n' +
+    'Variable names should not be JavaScript keywords.')" style="margin-left: 20px; width: max-content;">Try it</button>
+    <br><br>
+
+    <b style="margin-left: 40px; font-family: 'sans-serif'; color: brown; font-size: medium; "><script>
+    document.write('Rules for naming JS variables\n\n' +
+    'Variable names can only contain letters, numbers, underscores, and dollar signs. For example $my_1stVariable.\n\n' +
+    'Variables must begin with a letter, underscore, or dollar sign. For example $name, _name, or name.\n\n' +
+    'Variable names are case-sensitive.\n\n' +
+    'Variable names should not be JavaScript keywords.');
+</script></b>
+    <br><br>
+
+
+    <b><p style="margin-left: 20px; font-size: medium;">Q21. Write a program that take two numbers & add them in a new variable. Show the result in your browser. </p> </b>
+    <b style="margin-left: 30px; font-family: 'sans-serif'; color: brown; font-size: medium; "><script>
+        var number1 = 30, number2 = 14;
+        var sum = number1 + number2;
+        document.write("The sum of " + number1 + " and " + number2 + " is: " + sum);
+    </script></b> 
+    <br><br>
+
+
+    <b><p style="margin-left: 20px; font-size: medium;">Q22. Repeat task21 for subtraction, multiplication, division & modulus. </p> </b>
+    <b style="margin-left: 30px; font-family: 'sans-serif'; color: brown; font-size: medium; "><script>
+        var mult=number1*number2
+            document.write("The multiplication of " + number1 + " and " + number2 + " is: " + mult);
+
+         var sub=number1-number2
+            document.write( "\n" + "The subtraction of " + number1 + " and " + number2 + " is: " + sub + " \n ");
+        var divs=number1/number2
+            document.write("The division of " + number1 + " and " + number2 + " is: " + divs);
+    </script></b> 
+    <br><br>
+
+
+
+    <b><p style="margin-left: 20px; font-size: medium;">Q23. Do the following using JS Mathematic Expressions  
+        a. Declare a variable. 
+
+        b. Show the value of variable in your browser like “Value after variable declaration is: ??”.  
+
+        c.  Initialize the variable with some number.  
+        
+        d. Show the value of variable in your browser like “Initial value: 5”.  
+        
+        e.  Increment the variable.  
+        
+        f.  Show the value of variable in your browser like “Value after increment is: 6”.  
+        
+        g. Add 7 to the variable.  
+        
+        h. Show the value of variable in your browser like “Value after addition is: 13”.  
+        
+        i.  Decrement the variable.  
+        
+        j.  Show the value of variable in your browser like “Value after decrement is: 12”.  
+        
+        k.  Show the remainder after dividing the variable’s value by 3.  
+        
+        l.  Output : “The remainder is : 0”. </p> </b>
+
+    <b style="margin-left: 30px; font-family: 'sans-serif'; color: brown; font-size: medium; "><script>
+        var myVar = "??";
+            document.write("Value after variable declaration is: " + myVar + '\n');
+ 
+            myVar = 5;
+            document.write("Initial value: " + myVar + '\n');
+
+        myVar++;
+            document.write("Value after increment is: " + myVar + '\n');
+
+        myVar += 7;
+            document.write("Value after addition is: " + myVar + '\n');
+
+        myVar--;
+            document.write("Value after decrement is: " + myVar + '\n');
+
+        var remainder = myVar % 3;
+            document.write("The remainder is: " + remainder + '\n');
+
+    </script></b> 
+    <br><br>
+
+    <b><p style="margin-left: 20px; font-size: medium;">Q24. Cost of one movie ticket is 600 PKR. Write a script to store ticket price in a variable & calculate the cost of buying 5 tickets to a movie </p> </b>
+    <b style="margin-left: 30px; font-family: 'sans-serif'; color: brown; font-size: medium; "><script>
+        var ticketPrice = 600;
+        var numberOfTickets = 5;
+        var totalCost = ticketPrice * numberOfTickets;
+        document.write("The cost of buying " + numberOfTickets + " movie tickets is: " + totalCost);
+    </script></b> 
+    <br><br>
+
+</body>
+</html>
