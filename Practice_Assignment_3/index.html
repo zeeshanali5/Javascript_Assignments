@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Assignment 3</title>
+</head> <h1 style="text-align: center;"> JavaScript Assignment 3 </h1><br>
+
+<body style="background-color: blanchedalmond; margin-left: 40px; margin-top: 60px;">
+    
+    <b><p style="font-size: medium;">Q1. Write a program to take “city” name as input from user. If user enters “Karachi”, 
+        welcome the user like this: “Welcome to city of lights”</p> </b>
+
+        <button onclick="cityname()"> What's your city name </button>
+       <h4> <i> <script>  
+       function cityname(){
+       var cityname = prompt("Enter the city name:");
+
+            if (cityname.toLowerCase() === "karachi") {
+            document.write("<h4><i> Welcome to the city of lights </i></h4>");}
+            else {
+            document.write("Welcome to " + cityname ) ;}}
+         </script></h4></i> 
+
+<br>
+    <b><p style="font-size: medium;">Q2. Write a program to take “gender” as input from user. If the user is male, give the 
+        message: Good Morning Sir. If the user is female, give the message: Good Morning Ma’am.</p> </b>
+        
+        <button onclick="Gender()"> What's your Gender </button>
+        <script>
+        function Gender(){
+            var Gender = prompt("Enter your gender");
+
+            if(Gender.toLowerCase() === "female") 
+            {document.write("<h4><i> Good Morning Ma'am </h4></i>"); }
+
+            else if (Gender.toLowerCase() === "male") {
+                document.write("<h4><i> Good Morning Sir </h4></i> ");}
+
+            else{ document.write("<h4><i> Enter your correct gender such as Male or Female </h4></i>");}}
+            </script>
+<br><br><br>
+    <b><p style="font-size: medium;">Q3. Write a program to take input remaining fuel in car (in litres) from user. If the current 
+        fuel is less than 0.25litres, show the message “Please refill the fuel in your car” </p> </b>
+    
+        <button onclick="feul()"> How much feul in your car? </button>
+        <script>
+            function feul(){
+            let litres = prompt("Enter the amount of feul in your car");
+
+            if (litres.toLowerCase() < "0.25") {
+            document.write("<h4><i> Please refill the fuel in your car </i></h4>");}}
+        </Script>
+
+<br><br><br>
+    <b><p style="font-size: medium;">Q4. Run this script, & check whether alert message would be displayed or not. 
+        Record the outputs. </p> </b>
+
+        <b style="color:tomato;"><script>
+        /* var a = 4; 
+            if (++a === 5){ 
+            alert("given condition for variable a is true"); 
+            } */ 
+            document.write("The alert message <b>given condition for variable a is true </b>  will be displayed <br>");
+
+        /* var b = 82; 
+            if (b++ === 83){ 
+            alert("given condition for variable b is true"); 
+            } */
+            document.write("Output: The alert message will not be displayed<br>");
+
+            /*var c = 12; 
+            if (c++ === 13){ 
+            alert("condition 1 is true"); 
+            } 
+
+            if (c === 13){ 
+            alert("condition 2 is true"); 
+            } 
+            if (++c < 14){ 
+            alert("condition 3 is true"); 
+            } 
+            if(c === 14){ 
+            alert("condition 4 is true"); 
+            } */
+            document.write("Output: The alert messages <b>(condition 2 and is True) and (condition 4 is True)</b> will be displayed.<br>");
+
+            /* var materialCost = 20000; 
+            var laborCost = 2000; 
+            var totalCost = materialCost + laborCost; 
+            if (totalCost === laborCost + materialCost){ 
+            alert("The cost equals"); 
+            } */
+            document.write("Output: The alert message <b>(The cost equals)</b> will be displayed. <br>");
+
+
+
+           /* if (true){ 
+            alert("True"); 
+            } if (false){ 
+            alert("False"); 
+            } */ 
+            document.write("Output: The alert message <b> (True) </b> will be displayed. <br>");
+
+
+           /* if("car" < "cat"){ 
+            alert("car is smaller than cat"); 
+            } */
+            document.write("Output: The alert message <b> (car is smaller than cat) </b> will be displayed. <br>");
+
+        </Script></b>
+
+<br><br>
+    <b><p style="font-size: medium;">Q5. Guess game: 
+        Store a secret number (ranging from 1 to 10) in a variable. 
+        Prompt user to guess the secret number. 
+        a. If user guesses the same number, show “Bingo! Correct answer”. 
+        b. If the guessed number +1 is the secret number, show “Close enough to the correct answer”. 
+        </p> </b>
+    
+        <button onclick="guessgame()"> Number Guessing Game </button>
+        <script>
+            function guessgame(){
+        var secretnumber = 3;
+        var guess = +prompt("Guess a number between 1 to 10:");
+
+        if (guess === secretnumber){
+        document.write("<h3><i>Bingo! Correct Answer.</b></i>");}
+
+        else if (guess === secretnumber + 1 || guess === secretnumber - 1)
+        {
+        document.write("<h3><i>Close Enough to the Correct Answer.");}
+    
+        else {
+            document.write("<h3><i>Try Again.</b></i>");}}
+        </script>
+
+<br><br><br>
+    <b><p style="font-size: medium;">Q6.  Write a program to check whether the given number is divisible by 3. 
+        Show the message to the user if the number is divisible by 3.  
+        </p> </b>
+    
+        <button onclick="divide()"> check divisible possible </button>
+        <script>
+            function divide(){
+            var number = +prompt("Enter a number to check its divisible by 3: ")
+
+            if (number % 3 === 0) {
+            document.write(number + " is divisible by 3");}
+            
+            else {
+            document.write(number + " is not divisible by 3");}}
+        </script>
+
+<br><br><br>
+    <b><p style="font-size: medium;">Q7. Write a program that checks whether the given input is an even number or an odd 
+        number.</p></b>
+    
+        <button onclick="givennumber()"> Check even or odd number </button>
+        
+        <script>
+            function givennumber(){
+            var given = +prompt("Enter a number to check its even or odd: ")
+
+            if (given % 2 === 0) {
+            document.write(given + " is even number");}
+
+            else {
+            document.write(given + " is odd number");}}
+        </script>
+<br><br><br>
+
+    <b><p style="font-size: medium;">Q8. Write a program that takes temperature as input and shows a message based on 
+        following criteria:<br>
+        a. T > 40 then “It is too hot outside.” <br>
+        b. T > 30 then “The Weather today is Normal.” <br>
+        c. T > 20 then “Today’s Weather is cool.” <br>
+        d. T > 10 then “OMG! Today’s weather is so Cool.”<br></p></b>
+
+         <button onclick="temp()"> Check status of temperature </button>
+        <script>
+            function temp(){
+            var temperature = prompt("Enter the temperature:");
+
+            if (temperature > 40) {
+            document.write("<h3><i>It is too hot outside.");
+            } else if (temperature > 30) {
+            document.write("<h3><i>The Weather today is Normal.");
+            } else if (temperature > 20) {
+            document.write("<h3><i>Today's Weather is cool.");
+            } else if (temperature > 10) {
+            document.write("<h3><i>OMG! Today's weather is so Cool.");
+            } else {
+            document.write("<h3><i>The temperature is too low.</h3></i>");
+            }}
+        </script>
+
+<br><br><br>
+
+    <b><p style="font-size: medium;">Q9. Write a program to create a calculator for +,-,*, / & % using if statements. Take 
+        the following input: <br>
+        a. First number <br>
+        b. Second number <br>
+        c. Operation (+, -, *, /, %) Compute & show the calculated result to user.<br></p></b>
+
+         <button onclick="operate()"> calculator </button>
+
+        <script>
+            function operate(){
+            var firstNumber = +prompt("Enter the first number:");
+
+            var secondNumber = +prompt("Enter the second number:");
+
+            var operation = prompt("Enter the operation (+, -, *, /, %):");
+
+                if (operation === "+") {
+                var result = firstNumber + secondNumber;
+                document.write("The result of " + firstNumber + " + " + secondNumber + " is: " + result);} 
+                
+                else if (operation === "-") {
+                var result = firstNumber - secondNumber;
+                document.write("The result of " + firstNumber + " - " + secondNumber + " is: " + result);}
+
+                else if (operation === "*") {
+                var result = firstNumber * secondNumber;
+                document.write("The result of " + firstNumber + " * " + secondNumber + " is: " + result);}
+
+                else if (operation === "/") {
+                var result = firstNumber / secondNumber;
+                document.write("The result of " + firstNumber + " / " + secondNumber + " is: " + result);}
+
+                else if (operation === "%") {
+                var result = firstNumber % secondNumber;
+                document.write("The result of " + firstNumber + " % " + secondNumber + " is: " + result);}
+
+                else {
+                document.write("Invalid operation. Please try again.");}}
+
+        </script>
+
+</body>
+</html>
