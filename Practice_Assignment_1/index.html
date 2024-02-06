@@ -129,19 +129,33 @@
 
     <b><p style="margin-left: 20px; font-size: medium;">Q19. Declare 5 legal & 5 illegal variable names. </p> </b>
     <b style="margin-left: 30px; font-family: 'sans-serif'; color: brown; font-size: medium; ">
+    <button onclick="alert('Legal Variable: \n' + '\nvar myVariable \n' + 
+    'var age \n' +
+    'var firstName \n' +
+    'var totalCount \n'+ 
+ '\nIllegal Variable Names:\n\n' +
+    'var 123abc \n' +
+    'var my_variable \n'+ 
+    'var illegal_variable \n'+
+    'var my_variable1 \n' )"> Try it</button></b>
+   
+
     <script>
-        document.write("legal variables: "
+       
         var myVariable 
-        var $price
+        var age
         var firstName
-        var totalCount 
+        var totalCount
      //Illegal Variable Names:
-        var First_Place 
-        var my_variable
-        var illegal_variable 
-        var my_variable1
-        var break);
-    </script></b> 
+
+        var 123abc 
+        var my_variable 
+        var illegal_variable
+        var my_variable1 
+        var break
+    
+
+    </script>
     <br><br>
 
 
@@ -162,33 +176,40 @@
     <br><br>
 
     <b style="margin-left: 40px; font-family: 'sans-serif'; color: brown; font-size: medium; "><script>
-    document.write('Rules for naming JS variables\n\n' +
-    'Variable names can only contain letters, numbers, underscores, and dollar signs. For example $my_1stVariable.\n\n' +
-    'Variables must begin with a letter, underscore, or dollar sign. For example $name, _name, or name.\n\n' +
-    'Variable names are case-sensitive.\n\n' +
+    document.write('Rules for naming JS variables<br>' +
+    'Variable names can only contain letters, numbers, underscores, and dollar signs. For example $my_1stVariable.<br>' +
+    'Variables must begin with a letter, underscore, or dollar sign. For example $name, _name, or name.<br>' +
+    'Variable names are case-sensitive.<br>' +
     'Variable names should not be JavaScript keywords.');
 </script></b>
     <br><br>
 
 
     <b><p style="margin-left: 20px; font-size: medium;">Q21. Write a program that take two numbers & add them in a new variable. Show the result in your browser. </p> </b>
-    <b style="margin-left: 30px; font-family: 'sans-serif'; color: brown; font-size: medium; "><script>
-        var number1 = 30, number2 = 14;
+    <b style="margin-left: 30px; font-family: 'sans-serif'; color: brown; font-size: medium; ">
+        <button onclick="summ()"> Try it </button>
+    <script>
+       function summ(){
+       var number1 = 30, number2 = 14;
         var sum = number1 + number2;
-        document.write("The sum of " + number1 + " and " + number2 + " is: " + sum);
+        document.write("The sum of " + number1 + " and " + number2 + " is: " + sum);}
     </script></b> 
     <br><br>
 
 
     <b><p style="margin-left: 20px; font-size: medium;">Q22. Repeat task21 for subtraction, multiplication, division & modulus. </p> </b>
-    <b style="margin-left: 30px; font-family: 'sans-serif'; color: brown; font-size: medium; "><script>
+    <b style="margin-left: 30px; font-family: 'sans-serif'; color: brown; font-size: medium; ">
+    <button onclick="calc()"> Try It </button>
+    <script>
+        function calc(){
+           var number1 = 30, number2 = 14;
         var mult=number1*number2
-            document.write("The multiplication of " + number1 + " and " + number2 + " is: " + mult);
+            document.write("The multiplication of " + number1 + " and " + number2 + " is: " + mult + "<br>");
 
          var sub=number1-number2
-            document.write( "\n" + "The subtraction of " + number1 + " and " + number2 + " is: " + sub + " \n ");
+            document.write( "The subtraction of " + number1 + " and " + number2 + " is: " + sub + "<br>");
         var divs=number1/number2
-            document.write("The division of " + number1 + " and " + number2 + " is: " + divs);
+            document.write("The division of " + number1 + " and " + number2 + " is: " + divs);}
     </script></b> 
     <br><br>
 
@@ -219,34 +240,41 @@
         
         l.  Output : “The remainder is : 0”. </p> </b>
 
-    <b style="margin-left: 30px; font-family: 'sans-serif'; color: brown; font-size: medium; "><script>
-        var myVar = "??";
+    <b style="margin-left: 30px; font-family: 'sans-serif'; color: brown; font-size: medium; ">
+    <button onclick="Exp()"> Try it </button>
+    <script>
+       function Exp(){
+       
+       var myVar = "??";
             document.write("Value after variable declaration is: " + myVar + '\n');
  
             myVar = 5;
-            document.write("Initial value: " + myVar + '\n');
+            document.write("Initial value: " + myVar + "<br>");
 
         myVar++;
-            document.write("Value after increment is: " + myVar + '\n');
+            document.write("Value after increment is: " + myVar + "<br>");
 
         myVar += 7;
-            document.write("Value after addition is: " + myVar + '\n');
+            document.write("Value after addition is: " + myVar + "<br>");
 
         myVar--;
-            document.write("Value after decrement is: " + myVar + '\n');
+            document.write("Value after decrement is: " + myVar + "<br>");
 
         var remainder = myVar % 3;
-            document.write("The remainder is: " + remainder + '\n');
+            document.write("The remainder is: " + remainder + "<br>");}
 
     </script></b> 
     <br><br>
 
     <b><p style="margin-left: 20px; font-size: medium;">Q24. Cost of one movie ticket is 600 PKR. Write a script to store ticket price in a variable & calculate the cost of buying 5 tickets to a movie </p> </b>
-    <b style="margin-left: 30px; font-family: 'sans-serif'; color: brown; font-size: medium; "><script>
+    <b style="margin-left: 30px; font-family: 'sans-serif'; color: brown; font-size: medium; ">
+    <button onclick="price()"> Try it </button>
+    <script>
+        function price(){
         var ticketPrice = 600;
         var numberOfTickets = 5;
         var totalCost = ticketPrice * numberOfTickets;
-        document.write("The cost of buying " + numberOfTickets + " movie tickets is: " + totalCost);
+        document.write("The cost of buying " + numberOfTickets + " movie tickets is: " + totalCost);}
     </script></b> 
     <br><br>
 
